@@ -18,17 +18,19 @@ h4{
 }
 
 .smaller-container{
+  overflow: scroll;
   display: inline-block;
   margin: 20px;
   border: 1px solid black;
   background-color: white;
   height: 90%;
-  width: 70%;
+  width: 85%;
   text-align: center;
 }
 
 .day {
- background: pink;
+ display: inline-block;
+  background: rgb(245, 182, 240);
  margin: 10px;
   height: 30%;
   /* width: 100%; */
