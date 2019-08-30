@@ -1,0 +1,33 @@
+.first {
+background-color: indianred;
+height: 100px;
+width: 100px;
+border: 14px solid pink;
+padding: 50px;
+color:white;
+text-align: center;
+}
+
+.column, .row {
+  height: 70%;
+  width: 100%;
+  border: 1px solid palevioletred;
+}
+
+.row {
+  border: 1px solid goldenrod;
+  height: 10%
+}
+
+.item {
+  background-color: black;
+  height: 60px;
+  /* width: 100%;  */
+  margin: 10px;
+}
+
+.row .item {
+  background-color: yellowgreen;
+  display: inline-block;
+  width: 100px;
+}
