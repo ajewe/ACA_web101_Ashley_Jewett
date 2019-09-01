@@ -34,99 +34,20 @@ h4{
 
 .grid-container{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr) ) ;
   grid-gap: 50px;
   margin: 20px;
   text-align: center;
 
 }
 
-.grid-item1 {
- display: grid;
- grid-column: 1;
- grid-row: 1;
+.grid-item {
  overflow: hidden;
   background: rgba(245, 182, 240, 0.5);
-
 }
-.grid-item1:hover {
+
+.grid-item:hover, .grid-item:hover h2, .grid-item:hover h3, .grid-item:hover h4 {
   background: rgba(245, 182, 240, 1);
-}
-.grid-item1:hover h2, .grid-item1:hover h3, .grid-item1:hover h4 {
   color: black;
-}
 
-.grid-item2 {
-  display: grid;
-  grid-column: 2;
-  grid-row: 1;
-  overflow: hidden;
-   background: rgba(245, 182, 240, 0.5);
- }
-
- .grid-item2:hover {
-  background: rgba(245, 182, 240, 1);
-}
-.grid-item2:hover h2, .grid-item2:hover h3, .grid-item2:hover h4 {
-  color: black;
-}
-
- .grid-item3 {
-  display: grid;
-  grid-column: 3;
-  grid-row: 1;
-  overflow: hidden;
-   background: rgba(245, 182, 240, 0.5);
- }
-
- .grid-item3:hover {
-  background: rgba(245, 182, 240, 1);
-}
-.grid-item3:hover h2, .grid-item3:hover h3, .grid-item3:hover h4 {
-  color: black;
-}
-
- .grid-item4 {
-  display: grid;
-  grid-column: 1;
-  grid-row: 2;
-  overflow: hidden;
-   background: rgba(245, 182, 240, 0.5);
- }
-
- .grid-item4:hover {
-  background: rgba(245, 182, 240, 1);
-}
-.grid-item4:hover h2, .grid-item4:hover h3, .grid-item4:hover h4 {
-  color: black;
-}
-
- .grid-item5 {
-  display: grid;
-  grid-column: 2;
-  grid-row: 2;
-  overflow: hidden;
-   background: rgba(245, 182, 240, 0.5);
- }
- .grid-item5:hover {
-  background: rgba(245, 182, 240, 1);
-}
-.grid-item5:hover h2, .grid-item5:hover h3, .grid-item5:hover h4 {
-  color: black;
-}
-
- .grid-item6 {
-  display: grid;
-  grid-column: 3;
-  grid-row: 2;
-  overflow: hidden;
-   background: rgba(245, 182, 240, 0.5);
- }
-
- .grid-item6:hover {
-  background: rgba(245, 182, 240, 1);
-}
-.grid-item6:hover h2, .grid-item6:hover h3, .grid-item6:hover h4 {
-  color: black;
 }
