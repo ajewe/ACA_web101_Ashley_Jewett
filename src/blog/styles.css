@@ -10,20 +10,28 @@ h1 {
 
 h2 {
   color: white;
-  text-align:left;
+  text-align:center;
   margin-block-end: 10px;
   margin-block-start: 10px;
+  
 }
 h3 {
   color: white;
+  font-size: 1em;
+  
 }
 h4{
   color:white;
+  font-size: 1.2em;
   text-align: left;
   margin-block-end: 1px;
-  margin-block-start: 1px;
+  padding: 6px;
+
 }
 
+a{
+  text-decoration: none;
+}
 
 .main-container {
   background-color: rgb(16, 15, 71);
