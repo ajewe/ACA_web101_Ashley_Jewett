@@ -1,13 +1,13 @@
-/* * {
-  background-color: red;
-} */
+ * { 
+  font-weight: normal;
+}
 
 .banner {
   overflow: hidden;
   display: inline-block;
-  height: 30%;
+  height: 20%;
   width: 100%;
-  background-color: red;
+  background-color: rgb(100, 192, 177);
   text-align: center;
 }
 
@@ -15,20 +15,54 @@
   display: inline-block;
   overflow: hidden;
   /* width: 10vh; */
-    height: 10vh;
-    border: 2px solid black;
-    text-align: center;
-    padding: 10px 16px;
-    margin: 20px 20px 2px;
+  height: 5vh;
+  border: 2px solid rgba(255, 255, 255, 0.45);
+  text-align: center;
+  padding: 8px 8px 8px;
+  margin: 25px 20px 0px;
 }
 
-h2 {
+h1 {
   font-size: 32px;
+  font-style: oblique;
+  color: white;
+  margin-block-start: 10px;
+  margin-block-end: 0px;
 }
 
-.contact {
+.initials {
+  font-size: 25px;
+  color:rgba(255, 255, 255, 0.7);
+  margin-block-start: 5px;
+  margin-block-end: 0px;
+}
+
+h3 {
   font-size: 18px;
   font-style: italic;
+  font-weight: 540;
+}
+
+.email {
+  font-size: 16px;
+  font-style: italic;
+  margin-block-start: 4px;
+  margin-block-end: 0px;
+  color: rgb(77, 77, 77);
+}
+
+.phone {
+  font-size: 14px;
+  margin-block-start: 2px;
+  margin-block-end: 0px;
+  color: rgb(77, 77, 77);
+}
+
+.address {
+  font-size: 14px;
+  margin-block-start: 2px;
+  margin-block-end: 4px;
+  color: rgb(77, 77, 77);
 }
 
 .container {
@@ -38,18 +72,18 @@ h2 {
 }
 
 .left {
-  width: 70%;
+  width: 60%;
   height: 100%;
-  background: pink;
+  background: white;
   float: left;
   padding: 20px;
 }
 
 .right {
   overflow: auto;
-  margin-left: 70%;
+  margin-left: 60%;
   height: 100%;
-  background: yellow;
+  background: rgb(243, 242, 242);
   padding: 20px;
 }
 
@@ -57,7 +91,7 @@ hr{
   display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid rgb(0, 0, 0);
+    border-top: 1px solid rgb(182, 177, 177);
     margin: 1em 0;
     padding: 0;
 }
