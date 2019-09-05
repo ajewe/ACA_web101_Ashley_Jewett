@@ -131,3 +131,7 @@ hr{
 b {
   font-weight: bold;
 }
+
+/* @media (min-width: 576px) {
+font-size: 1px;
+} */
