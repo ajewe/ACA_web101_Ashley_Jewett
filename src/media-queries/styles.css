@@ -1,0 +1,42 @@
+img {
+  height: 300px;
+  width: auto;
+}
+
+.image {
+  display: inline-block;
+  overflow: hidden;
+  background-color: black;
+  text-align: center;
+  width: 80%;
+  margin: 5% 10%;
+}
+
+.nav {
+  background-color: gray;
+}
+
+.left-nav {
+  background-color: gray;
+  height: 100px;
+  width: 100px;
+}
+
+@media (min-width: 576px) {
+
+}
+
+/* Medium and up (Tablets) */
+@media (min-width: 768px) {
+
+}
+
+/* Large and up (Desktops) */
+@media (min-width: 992px) {
+
+}
+
+/* Extra Large and up (Wide Screen Desktops) */
+@media (min-width: 1200px) {
+
+}
