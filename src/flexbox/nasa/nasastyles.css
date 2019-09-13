@@ -1,0 +1,35 @@
+.nasa {
+  height: 450px;
+  width: 850px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background: url(jeremy-thomas-4dpAqfTbvKA-unsplash.jpg);
+  color: white;
+  font-size: 72px;
+}
+
+.gray-box {
+  display: flex;
+  height: 324px;
+  width: 850px;
+  background-color: rgb(214, 214, 214);
+  justify-content: space-around;
+}
+
+.name-box {
+  height: 40px;
+  width: 200px;
+  background-color: white;
+}
+
+.message-box {
+  height: 100px;
+  width: 300px;
+  background-color: white;
+}
