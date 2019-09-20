@@ -54,5 +54,11 @@ p {
   color: white;
   background-color: #252525;
   margin-left: 16%;
-  
+  padding-top: 2%;
+}
+
+.fa-twitter {
+  color: black;
+  width: 100px;
+  height: 100px;
 }
