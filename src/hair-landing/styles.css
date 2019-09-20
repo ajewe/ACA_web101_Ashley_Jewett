@@ -45,4 +45,14 @@ p {
 
 .bottom {
   background-color: #252525;
+  padding-top: 3%;
+}
+
+.foot {
+  font-size: 16px;
+  font-weight: normal;
+  color: white;
+  background-color: #252525;
+  margin-left: 16%;
+  
 }
