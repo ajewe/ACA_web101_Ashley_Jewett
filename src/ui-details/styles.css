@@ -1,0 +1,131 @@
+
+h1 {
+  font-size: 22px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+.first-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: 60px;
+  width: 600px;
+  border-top: 4px solid #12B8AB;
+  border-bottom: 1px solid rgb(168, 168, 168);
+  background-color: white;
+  justify-content: space-around;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+}
+
+.fas {
+  color: gray;
+  background-color: white;
+}
+
+.nav {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(82, 78, 78);
+  background-color: white;
+  position: relative;
+}
+
+.box-hotel {
+  border-bottom: 3px solid #12B8AB;
+}
+
+.home:before { 
+  content: '\f015';
+  font-family: fontAwesome;
+  color: rgb(180, 179, 179);
+  padding-right: 5px;
+}
+
+.hotel:before {
+  content: '\f236';
+  font-family: fontAwesome;
+  color: rgb(180, 179, 179);
+  padding-right: 5px;
+}
+
+.flights:before{
+  content: '\f072';
+  font-family: fontAwesome;
+  color: rgb(180, 179, 179);
+  padding-right: 5px;
+}
+
+.relax:before {
+  content: '\f2cd';
+  font-family: fontAwesome;
+  color: rgb(180, 179, 179);
+  padding-right: 5px;
+  /* position: absolute; */
+}
+
+.box:hover{
+  background-color:rgba(177, 175, 175, 0.103);
+  cursor: pointer;
+}
+
+/* .hotel:before:hover {
+background-color: rgba(177, 175, 175, 0.103);
+} This doesn't work... */
+
+.example{
+  margin-top: 1.5rem;
+}
+
+.ex-1 ul{
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid #ddd;
+  border-top: 4px solid #11B8AB;
+}
+
+.ex-1 ul li{
+  width: 25%;
+  text-align: center;
+  list-style: none;
+  padding: 1.5rem 0;
+  font-weight: bold;
+  color: #666;
+  cursor: pointer;
+  position: relative;
+}
+
+.ex-1 ul li i{
+  color: #bbb;
+  font-size: 1.5rem;
+  padding-right: .5rem;
+  vertical-align: -2px;
+}
+
+.ex-1 ul li.active:after{
+  width: 100%;
+  content: '';
+  height: 3px;
+  bottom: -1px;
+  left: 0;
+  display: block;
+  position: absolute;
+  background: #11B8AB;
+}
+
+.ex-1 ul li.active{
+  color: #444;
+}
+
+.ex-1 ul li.active i{
+  color: #11B8AB;
+}
+
+.ex-1 ul li:hover{
+  background: #f9f9f9;
+}
