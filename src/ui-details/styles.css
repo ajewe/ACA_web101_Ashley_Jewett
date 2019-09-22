@@ -193,3 +193,82 @@ background-color: rgba(177, 175, 175, 0.103);
   background: -webkit-linear-gradient(top,  hsl(48, 100%, 40%) 0%,hsl(28, 100%, 40%) 100%);
   background: linear-gradient(to bottom,  hsl(48, 100%, 40%) 0%,hsl(28, 100%, 40%) 100%);
 }
+
+.example3 {
+  background-color: rgb(238, 238, 238);
+  width: 600px;
+  height: 60px;
+  padding: 20px;
+}
+
+.examp3 {
+  height: 40px;
+  width: 180px;
+  border-radius: 4px;
+  border: none;
+  margin: 10px;
+  font-size: 16px;
+  transition: all .22s;
+}
+
+.accounts {
+  background-color: rgb(124, 105, 209);
+  color: white;
+  box-shadow: 2px 5px 10px rgb(175, 175, 175);
+}
+
+.sales {
+  color: rgb(124, 105, 209);
+  background-color: white;
+  box-shadow: 2px 5px 10px rgb(175, 175, 175);
+}
+
+.examp3:hover {
+  position: relative;
+  bottom: 2px;
+  cursor: pointer;
+  box-shadow: 2px 7px 15px rgb(175, 175, 175);
+}
+
+.accounts:hover {
+  background-color: rgb(154, 138, 224);
+}
+
+.sales:hover {
+  color: rgb(187, 175, 238);
+}
+
+.ex-4{
+  background: #f1f1f1;
+  padding: 2rem;
+}
+
+.ex-4 button{
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  border-radius: 5px;
+  border: none;
+  padding: .625rem 2rem;
+  box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+  cursor: pointer;
+  display: inline-block;
+  transition: all .22s;
+}
+
+.ex-4 button:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+  filter: brightness(130%);
+}
+
+.ex-4 button.b-1{
+  background: #6771E5;
+  color: #fff;
+  margin-right: .25rem;
+}
+
+.ex-4 button.b-2{
+  color: #6771E5;
+  background: #fff;
+}
