@@ -69,6 +69,7 @@ h2 {
   font-family: fontAwesome;
   color: rgb(180, 179, 179);
   padding-right: 5px;
+  background-color: rgb(255, 255, 255, 0);
   /* position: absolute; */
 }
 
@@ -277,42 +278,85 @@ background-color: rgba(177, 175, 175, 0.103);
 }
 
 .exa4 {
+  /* height: auto; */
   columns: 2;
+  column-gap: 140px;
+  /* row-gap: 20px; */
   list-style-type: none;
 }
 
 .examp4 {
-  display: grid;
-  grid-template-rows: 1fr 1.3fr;
-  grid-template-columns: 1fr 1fr;
   height: 300px;
   width: 700px;
   background-color: rgb(238, 238, 238);
 }
 
 .exmp4 {
-  grid-column: 1/4;
   padding: 20px;
-  padding-bottom: 0px;
-  padding-top: 0px;
-  font-size: 18px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-size: 16px;
 }
 
 .exa4 {
-  margin: 20px;
-  /* grid-row: 2/3; */
+  /* margin: 20px; */
+  /* padding-left: 20px; */
 }
 
-.exafoura {
-  /* grid-column: 1/2; */
+.far-li {
+  color: rgb(133, 133, 224);
+  /* margin-bottom: 20px; */
+  /* text-indent: -10px; */
+  /* padding-bottom: 20px; */
+  /* padding-left: 20px; */
 }
 
-.exafourb {
-  grid-column: 2/3;
-  margin-left: 0px;
+li {
+  padding-bottom: 30px;
+  /* padding-left: 10px; */
+  /* text-indent: -10px; */
 }
 
+li span.far-li {
+  position: relative;
+  left: -20px;
+  padding-left: 30px;
+}
 
+.ex-8{
+  background: #f1f1f1;
+  padding: 2rem;
+}
+
+.ex-8 p{
+  font-size: 1rem;
+}
+
+.ex-8 ul{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.ex-8 ul div{
+  width: 50%;
+}
+
+.ex-8 ul li{
+  list-style: none;
+  line-height: 2;
+  color: #444;
+  margin-left: -2.325rem;
+}
+
+.ex-8 ul li:before{
+  content: '\f05d';
+  font-family: 'FontAwesome';
+  padding-right: 1rem;
+  font-size: 1.325rem;
+  color: #AE98DB;
+  vertical-align: -2px;
+}
 
 .ex5 {
   height: 260px;
