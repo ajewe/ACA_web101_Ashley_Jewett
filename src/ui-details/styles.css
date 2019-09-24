@@ -1,0 +1,369 @@
+body {
+  height: auto;
+}
+
+h1 {
+  font-size: 22px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+.first-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: 60px;
+  width: 600px;
+  border-top: 4px solid #12B8AB;
+  border-bottom: 1px solid rgb(168, 168, 168);
+  background-color: white;
+  justify-content: space-around;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+}
+
+.fas {
+  color: gray;
+  background-color: white;
+}
+
+.nav {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(82, 78, 78);
+  background-color: white;
+  position: relative;
+}
+
+.box-hotel {
+  border-bottom: 3px solid #12B8AB;
+}
+
+.home:before { 
+  content: '\f015';
+  font-family: fontAwesome;
+  color: rgb(180, 179, 179);
+  padding-right: 5px;
+}
+
+.hotel:before {
+  content: '\f236';
+  font-family: fontAwesome;
+  color: rgb(180, 179, 179);
+  padding-right: 5px;
+}
+
+.flights:before{
+  content: '\f072';
+  font-family: fontAwesome;
+  color: rgb(180, 179, 179);
+  padding-right: 5px;
+}
+
+.relax:before {
+  content: '\f2cd';
+  font-family: fontAwesome;
+  color: rgb(180, 179, 179);
+  padding-right: 5px;
+  /* position: absolute; */
+}
+
+.box:hover{
+  background-color:rgba(177, 175, 175, 0.103);
+  cursor: pointer;
+}
+
+/* .hotel:before:hover {
+background-color: rgba(177, 175, 175, 0.103);
+} This doesn't work... */
+
+.example{
+  margin-top: 1.5rem;
+}
+
+.ex-1 ul{
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid #ddd;
+  border-top: 4px solid #11B8AB;
+}
+
+.ex-1 ul li{
+  width: 25%;
+  text-align: center;
+  list-style: none;
+  padding: 1.5rem 0;
+  font-weight: bold;
+  color: #666;
+  cursor: pointer;
+  position: relative;
+}
+
+.ex-1 ul li i{
+  color: #bbb;
+  font-size: 1.5rem;
+  padding-right: .5rem;
+  vertical-align: -2px;
+}
+
+.ex-1 ul li.active:after{
+  width: 100%;
+  content: '';
+  height: 3px;
+  bottom: -1px;
+  left: 0;
+  display: block;
+  position: absolute;
+  background: #11B8AB;
+}
+
+.ex-1 ul li.active{
+  color: #444;
+}
+
+.ex-1 ul li.active i{
+  color: #11B8AB;
+}
+
+.ex-1 ul li:hover{
+  background: #f9f9f9;
+}
+
+.example-2 {
+  width: 200px;
+  height: 40px;
+  font-size: 18px;
+  margin: 8px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+.twoa {
+  background-image: linear-gradient(rgb(152, 234, 255),rgb(44, 116, 216));
+}
+
+.twob {
+  background-image: linear-gradient(rgb(241, 229, 56), rgb(241, 160, 10))
+}
+
+.twoa:hover {
+  background-image: linear-gradient(rgb(127, 197, 214),rgb(30, 82, 155));
+}
+
+.twob:hover {
+  background-image: linear-gradient(rgb(190, 181, 42), rgb(146, 96, 3))
+}
+
+.ex-3 button{
+  color: #fff;
+  padding: .625rem 2rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.ex-3 button.b-1{
+  background: -moz-linear-gradient(top,  hsl(194, 100%, 50%) 0%, hsl(208, 100%, 50%) 100%);
+  background: -webkit-linear-gradient(top,  hsl(194, 100%, 50%) 0%,hsl(208, 100%, 50%) 100%);
+  background: linear-gradient(to bottom,  hsl(194, 100%, 50%) 0%,hsl(208, 100%, 50%) 100%);
+  margin-right: .25rem;
+}
+
+.ex-3 button.b-1:hover{
+  background: -moz-linear-gradient(top,  hsl(194, 100%, 40%) 0%, hsl(208, 100%, 40%) 100%);
+  background: -webkit-linear-gradient(top,  hsl(194, 100%, 40%) 0%,hsl(208, 100%, 40%) 100%);
+  background: linear-gradient(to bottom,  hsl(194, 100%, 40%) 0%,hsl(208, 100%, 40%) 100%);
+}
+
+.ex-3 button.b-2{
+  background: -moz-linear-gradient(top,  hsl(48, 100%, 50%) 0%, hsl(28, 100%, 50%) 100%);
+  background: -webkit-linear-gradient(top,  hsl(48, 100%, 50%) 0%,hsl(28, 100%, 50%) 100%);
+  background: linear-gradient(to bottom,  hsl(48, 100%, 50%) 0%,hsl(28, 100%, 50%) 100%);
+}
+
+.ex-3 button.b-2:hover{
+  background: -moz-linear-gradient(top,  hsl(48, 100%, 40%) 0%, hsl(28, 100%, 40%) 100%);
+  background: -webkit-linear-gradient(top,  hsl(48, 100%, 40%) 0%,hsl(28, 100%, 40%) 100%);
+  background: linear-gradient(to bottom,  hsl(48, 100%, 40%) 0%,hsl(28, 100%, 40%) 100%);
+}
+
+.example3 {
+  background-color: rgb(238, 238, 238);
+  width: 600px;
+  height: 60px;
+  padding: 20px;
+}
+
+.examp3 {
+  height: 40px;
+  width: 180px;
+  border-radius: 4px;
+  border: none;
+  margin: 10px;
+  font-size: 16px;
+  transition: all .22s;
+}
+
+.accounts {
+  background-color: rgb(124, 105, 209);
+  color: white;
+  box-shadow: 2px 5px 10px rgb(175, 175, 175);
+}
+
+.sales {
+  color: rgb(124, 105, 209);
+  background-color: white;
+  box-shadow: 2px 5px 10px rgb(175, 175, 175);
+}
+
+.examp3:hover {
+  position: relative;
+  bottom: 2px;
+  cursor: pointer;
+  box-shadow: 2px 7px 15px rgb(175, 175, 175);
+}
+
+.accounts:hover {
+  background-color: rgb(154, 138, 224);
+}
+
+.sales:hover {
+  color: rgb(187, 175, 238);
+}
+
+.ex-4{
+  background: #f1f1f1;
+  padding: 2rem;
+}
+
+.ex-4 button{
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  border-radius: 5px;
+  border: none;
+  padding: .625rem 2rem;
+  box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+  cursor: pointer;
+  display: inline-block;
+  transition: all .22s;
+}
+
+.ex-4 button:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+  filter: brightness(130%);
+}
+
+.ex-4 button.b-1{
+  background: #6771E5;
+  color: #fff;
+  margin-right: .25rem;
+}
+
+.ex-4 button.b-2{
+  color: #6771E5;
+  background: #fff;
+}
+
+.exa4 {
+  columns: 2;
+  list-style-type: none;
+}
+
+.examp4 {
+  display: grid;
+  grid-template-rows: 1fr 1.3fr;
+  grid-template-columns: 1fr 1fr;
+  height: 300px;
+  width: 700px;
+  background-color: rgb(238, 238, 238);
+}
+
+.exmp4 {
+  grid-column: 1/4;
+  padding: 20px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  font-size: 18px;
+}
+
+.exa4 {
+  margin: 20px;
+  /* grid-row: 2/3; */
+}
+
+.exafoura {
+  /* grid-column: 1/2; */
+}
+
+.exafourb {
+  grid-column: 2/3;
+  margin-left: 0px;
+}
+
+
+
+.ex5 {
+  height: 260px;
+  width: 600px;
+  background-color: rgb(238, 238, 238);
+}
+
+.e5 {
+  text-align: center;
+  font-size: 20px;
+  padding-top: 20px;
+  color: gray;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.x5 {
+  text-align: center;
+  font-size: 32px;
+}
+
+.a5 {
+  text-align: center;
+  padding-left: 120px;
+  padding-right: 120px;
+  color: rgb(83, 83, 83);
+  line-height: 1.5em;
+}
+
+.ex-14{
+  background: #f1f1f1;
+  padding: 2rem;
+  text-align: center;
+}
+
+.ex-14 .sup-title{
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #888;
+  letter-spacing: 1.3px;
+  margin-bottom: 0;
+}
+
+.ex-14 .title{
+  color: #222;
+  font-size: 2rem;
+}
+
+.ex-14 .desc{
+  margin: 0 auto;
+  max-width: 30rem;
+  color: #666;
+}
