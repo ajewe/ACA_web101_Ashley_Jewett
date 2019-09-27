@@ -29,10 +29,16 @@
     <iframe width="560" height="315" src="https://www.youtube.com/embed/-kMrXH84ZcI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <div class="form">
       <form>
+          <label for="name">Name:</label>
           <input type="text" name="name" id="name" placeholder="Your Full Name">
-          <input type="date" name="DOB" id="date-of-birth" required>
-          <input type="submit" value="Submit">
-          <input type="reset" value="Reset"> 
+          <label for="mail">E-mail:</label>
+          <input type="mail" name="mail" id="mail">
+          <label for="msg">Message:</label>
+          <textarea id="msg" name="user_message"></textarea>
+          <div class="button">
+            <button type="submit">Send message</button>
+            <button type="submit">Reset</button>
+          </div>
       </form>
     </div>
   </div>
