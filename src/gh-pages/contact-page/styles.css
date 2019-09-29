@@ -1,0 +1,79 @@
+body {
+  background-color: pink;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+} */
+
+.main-container {
+  width: 70%;
+}
+
+input {
+  margin: 20px;
+  width: 60%;
+  height: 30px;
+}
+
+textarea {
+  resize: none;
+  overflow: scroll;
+  height: 80px;
+  width: 80%;
+  margin: 20px 10% ;
+}
+
+label {
+  margin-left: 20px;
+}
+
+.div-1 {
+border: 1px solid blue;
+text-align: center;
+}
+
+.div-2 {
+border: 1px solid orange;
+}
+
+.div-3 {
+border: 1px solid black;
+}
+
+.div-4 {
+border: 1px solid red;
+}
+
+.div-5 {
+border: 1px solid green;
+text-align: center;
+}
+
+button {
+  margin: 20px;
+  width: 120px;
+  height: 30px;
+  border-radius: 6px;
+}
+
+@media (min-width: 992px) {
+
+  .main-container {
+    width: 40%;
+  }
+
+  div {
+    margin: 20px;
+  }
+
+  textarea {
+    height: 200px;
+  }
+
+}
