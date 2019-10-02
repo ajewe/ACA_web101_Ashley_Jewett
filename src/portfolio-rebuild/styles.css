@@ -5,6 +5,7 @@ body {
   border: 2px solid black;
   padding: 0px;
   margin: 0px;
+  background-color: rgb(63, 63, 243);
 }
 
 .top-nav {
@@ -44,12 +45,15 @@ i.fa-bars {
   display: flex;
   align-items: center;
   flex-direction: column;
+  /* animation: moveInLeft 0.5s ease-out; */
+
 }
 
 .info-box {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
+  background-color: rgba(0, 0, 0, 0.308);
   border: 2px solid black;
   height: 500px;
   width: 50%;
@@ -90,6 +94,7 @@ iframe {
   border: 2px solid green;
   margin-bottom: 20px;
   padding-top: 20px;
+  background-color: rgba(255, 255, 255, 0.651);
 }
 
 label {
@@ -225,6 +230,19 @@ button {
     margin: 10px;
     height: 30px;
   }
-
+}
+/* 
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  } */
 }
 
