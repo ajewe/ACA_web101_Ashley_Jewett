@@ -1,0 +1,69 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+}
+
+body:hover .box:nth-of-type(odd) {
+  transform: scale(2) translateX(10em) rotate(360deg);
+  transition: transform 3s ease;
+}
+
+body:hover .box:nth-of-type(even) {
+  transform: scale(0.5) translateX(-40em) rotate(-360deg);
+  transition: transform 2s ease;
+}
+
+.box1 {
+  background-color: rgb(148, 6, 6);
+}
+
+.box2 {
+  background-color: red;
+}
+
+.box3 {
+  background-color: orange;
+}
+
+.box4 {
+  background-color: rgb(182, 182, 10);
+}
+
+.box5 {
+  background-color: yellowgreen;
+}
+
+.box6 {
+  background-color: green;
+}
+
+.box7 {
+  background-color: rgb(22, 158, 151);
+}
+
+.box8 {
+  background-color: blue;
+}
+
+.box9 {
+  background-color: blueviolet;
+}
+
+.box10 {
+  background-color: rgb(62, 5, 128);
+}
+
+.box11 {
+  background-color: hotpink;
+}
+
+.box12 {
+  background-color: pink;
+}
