@@ -49,6 +49,10 @@ video {
   margin-bottom: 10px;
 }
 
+.navi {
+  display: none;
+}
+
 .phone {
   display: flex;
   color: white;
@@ -83,6 +87,7 @@ video {
   height: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .t3 {
@@ -185,6 +190,58 @@ p {
 
 @media (min-width: 768px) {
 
+  video {
+    position: fixed;
+    width: 170%;
+    height: auto;
+    top: 0;
+    left: -140;
+  }
+
+  .t1 {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .logo1 {
+    margin-left: 40px;
+  }
+
+  .navi {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    text-shadow: -1px 1px 6px rgba(0, 0, 0, 0.479);
+    margin: 10px;
+    font-size: 18px;
+  }
+
+  a:hover {
+    color: #1CD2E3;
+    transition: color 0.5s ease;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .t12 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 65%;
+    margin-right: 20px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
   .p1 {
   width: 500px;
   }
@@ -194,12 +251,10 @@ p {
     grid-template-rows: 1.5fr 1.5fr 1fr;
     grid-template-columns: 1fr 2fr;
     padding-top: 0;
-    height: 720px;
+    height: 620px;
   }
 
   .croissant {
-    width: 150px;
-    height: 150px;
     margin: 80px 0 0 80px;
   }
 
@@ -243,4 +298,28 @@ p {
     width: auto;
     padding-right: 30px;
   }
+}
+
+@media (min-width: 992px) {
+
+  video {
+    position: fixed;
+    width: 1480px;
+    height: auto;
+    top: 0;
+    left: 0;
+  }
+
+  .t2 {
+    height: 100%;
+  }
+
+  .p1 {
+    width: 700px;
+  }
+
+  .learn {
+    width: 250px;
+  }
+
 }
