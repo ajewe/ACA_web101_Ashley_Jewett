@@ -46,7 +46,7 @@ video {
 .logo1 {
   width: 130px;
   height: 130px;
-
+  margin-bottom: 10px;
 }
 
 .phone {
@@ -61,11 +61,10 @@ video {
 }
 
 .phone:hover {
-  border: transparent;
+  border: 1px solid #1CD2E3;
   cursor: pointer;
   background-color: #1CD2E3;
-  transition: background-color 0.5s ease, border 10s ease;
-  
+  transition: background-color 0.8s ease, border 1s ease;
 }
 
 .t2 {
@@ -123,7 +122,7 @@ p {
 .t5 {
   background-color: #F8F2E3;
   width: 100%;
-  height: 900px;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -131,10 +130,8 @@ p {
 }
 
 .croissant {
-  border: 2px solid black;
-  width: 50%;
-  height: 40%;
-  margin-bottom: 30px;
+  width: 95%;
+  height: auto;
 }
 
 .p2 {
@@ -144,7 +141,7 @@ p {
 .learn {
   width: 250px;
   border: 0;
-  margin-top: 40px;
+  margin: 20px 0px 100px;
 }
 
 .footer {
@@ -159,16 +156,31 @@ p {
 }
 
 .f1 {
-  width: 40%;
-  height: 60px;
-  border: 1px solid white;
-  margin-bottom: 20px;
+  width: auto;
+  height: auto;
+  margin: 40px 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fa {
+  color: white;
+  border: none;
+  margin: 0px 10px 10px;
 }
 
 .f2 {
   width: 40%;
   height: 60px;
-  border: 1px solid white;
+}
+
+.foot {
+  color: white;
+  font-size: 14px;
+  padding: 0;
+  margin-bottom: 5px;
+  display: block;
 }
 
 @media (min-width: 768px) {
@@ -206,11 +218,29 @@ p {
   }
 
   .footer {
+    height: 15%;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
 }
 
   .f1 {
-    margin: 0;
+    width: auto;
+    margin: 30px 30px;
+    flex-direction: row;
 }
+
+  .foot {
+    display: inline-block;
+    margin: 20px;
+  }
+
+  .fa {
+    margin: 0 10px;
+  }
+
+  .f2 {
+    width: auto;
+    padding-right: 30px;
+  }
 }
