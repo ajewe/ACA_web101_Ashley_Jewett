@@ -30,3 +30,17 @@ function addGamePiece(selectedElement) {
   }
   console.log('show clicked div', selectedElement)
 }
+
+// function getContentsOfSquare(name) {
+//   var boxDiv = document.getElementsByClassName(name)[0];
+  
+//   // if it has been clicked
+//   if (boxDiv.childElementCount == 0) {
+//     // has not been clicked, return ' '
+//     return false
+//   } else {
+//     return boxDiv.children[0].innerHTML
+//   }
+// }
+
+  if (document.getElementsByClassName("box1")[0] === 'x')
