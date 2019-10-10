@@ -8,21 +8,25 @@
 let previousGamePiece = null
 
 function addGamePiece(selectedElement) {
-  //create new element
-  let newElement = document.createElement('h1')
-  if (previousGamePiece === 'x') {
-  //add text to element
-  newElement.innerHTML = 'o'
-  //set previousGamePiece
-  previousGamePiece = 'o'
+  // If not clicked, add h1
+  if (selectedElement.childElementCount == 0) {
+    //create new element
+    let newElement = document.createElement('h1')
+    if (previousGamePiece === 'x') {
+      //add text to element
+      newElement.innerHTML = 'o'
+      //set previousGamePiece
+      previousGamePiece = 'o'
+    } else {
+      //add text to element
+      newElement.innerHTML = 'x'
+      //set previousGamePiece
+      previousGamePiece = 'x'
+    }
+    //add h1 as child to selectedElement on page
+    selectedElement.appendChild(newElement)
   } else {
-  //add text to element
-  newElement.innerHTML = 'x'
-  //set previousGamePiece
-  previousGamePiece = 'x'
+    console.log('already clicked')
   }
-  //add element with text to selectedElement on page
-  selectedElement.appendChild(newElement)
-  
   console.log('show clicked div', selectedElement)
 }
