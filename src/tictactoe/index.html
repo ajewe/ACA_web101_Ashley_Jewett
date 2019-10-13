@@ -8,19 +8,33 @@
   
 </head>
 <body>
-  
+<div class="main">
 <div class="game-grid">
-  <div class="box1" onclick="addGamePiece(this);"></div>
-  <div class="box12" onclick="addGamePiece(this);"></div>
-  <div class="box13" onclick="addGamePiece(this);"></div>
-  <div class="box14" onclick="addGamePiece(this);"></div>
-  <div class="box15" onclick="addGamePiece(this);"></div>
-  <div class="box16" onclick="addGamePiece(this);"></div>
-  <div class="box17" onclick="addGamePiece(this);"></div>
-  <div class="box18" onclick="addGamePiece(this);"></div>
-  <div class="box19" onclick="addGamePiece(this);"></div>
+  <div class="box" id="box1" onclick="addGamePiece(this);"></div>
+  <div class="box" id="box12" onclick="addGamePiece(this);"></div>
+  <div class="box" id="box13" onclick="addGamePiece(this);"></div>
+  <div class="box" id="box14" onclick="addGamePiece(this);"></div>
+  <div class="box" id="box15" onclick="addGamePiece(this);"></div>
+  <div class="box" id="box16" onclick="addGamePiece(this);"></div>
+  <div class="box" id="box17" onclick="addGamePiece(this);"></div>
+  <div class="box" id="box18" onclick="addGamePiece(this);"></div>
+  <div class="box" id="box19" onclick="addGamePiece(this);"></div>
 </div>
-
+<div class="tally">
+  <div class="label tally1">
+    <h2>Player X</h2>
+    <p id="inputX">0</p>
+  </div>
+  <div class="label tally2">
+    <h2>Draw</h2>
+    <p id="inputDraw">0</p>
+  </div>
+  <div class="label tally3">
+    <h2>Player O</h2>
+    <p id="inputO">0</p>
+  </div>
+</div>
+</div>
   <script src="./app.js"></script>
 </body>
 </html>
