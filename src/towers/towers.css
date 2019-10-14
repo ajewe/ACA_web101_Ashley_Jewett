@@ -15,19 +15,19 @@ body {
   border: 1px solid lightgray;
 }
 
-[data-row].red {
+[data-row].row1 {
   background-color: #f6c5c5;
 }
 
-[data-row].yellow {
+[data-row].row2 {
   background-color: #ffffa9;
 }
 
-[data-row].green {
+[data-row].row3 {
   background-color: #baf6ba;
 }
 
-[data-row].blue {
+[data-row].row4 {
   background-color: aliceblue;
 }
 
@@ -36,22 +36,22 @@ body {
   float: left;
 }
 
-[data-color="blue"] {
+[data-color="block1"] {
   height: 33px;
   background-color: blue;
 }
 
-[data-color="green"] {
+[data-color="block2"] {
   height: 43px;
   background-color: green;
 }
 
-[data-color="red"] {
+[data-color="block3"] {
   height: 63px;
   background-color: red;
 }
 
-[data-color="yellow"] {
+[data-color="block4"] {
   height: 83px;
   background-color: yellow;
 }
