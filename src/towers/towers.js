@@ -10,11 +10,12 @@
     } else {
       $block = $(this).children().last().detach();
     }
+
+    function checkIfValidMove() {
+      //if 
+    }
+
   })
-
-  $( function() {
-    $( "#draggable" ).draggable();
-
 
 
 
