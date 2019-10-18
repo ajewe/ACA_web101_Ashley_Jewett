@@ -21,7 +21,7 @@
 .infopop {
   height: 120px;
   width: 70%;
-  /* border: 2px solid green; */
+  background-color: rgba(128, 0, 128, 0.342);
 }
 
 #catimage {
@@ -40,6 +40,12 @@
 
 #catimage:hover {
   cursor: pointer;
+}
+
+h3 {
+  padding-top: 40px;
+  background: none;
+  text-align: center;
 }
 
 .points {
