@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: aliceblue;
+}
+
+.main {
+  width: 100%;
+  height: 80%;
+  display: flex;
+}
+
+.left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.infopop {
+  height: 120px;
+  width: 70%;
+  /* border: 2px solid green; */
+}
+
+#catimage {
+  height: 300px;
+  width: auto;
+  background-image: url(./images/Bleeche.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.cat {
+  width: auto;
+  height: 100%;
+}
+
+#catimage:hover {
+  cursor: pointer;
+}
+
+.points {
+  height: 30%;
+  width: 60%;
+}
+
+.score, .rate {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#tally, #loverate {
+  height: 40%;
+  width: 40%;
+  border: 1px solid gray;
+  margin-left: 30px;
+  padding: 10px;
+  font-size: 24px;
+}
+
+.right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  margin-right: 20px;
+}
+
+.iright {
+  height: 15%;
+  width: 100%;
+  display: flex;
+}
+
+.buy {
+  height: 100%;
+  width: 70%;
+  border: 2px solid gray;
+}
+
+h1 {
+  margin: 20px;
+  background: none;
+}
+
+.fact {
+  margin: 10px;
+}
+
+h2 {
+  margin: 10px;
+  background: none;
+}
+
+.fact-list {
+  height: 100%;
+  width: 30%;
+  border: 2px solid black;
+}
+
+.buy {
+  pointer-events: none;
+}
+
+.buy:hover {
+  cursor: pointer;
+}
