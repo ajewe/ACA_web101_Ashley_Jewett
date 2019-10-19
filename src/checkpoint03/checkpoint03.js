@@ -1,3 +1,4 @@
+$(document).ready(function() {
 
 //Every click on cat image, add 1 to score
 
@@ -123,3 +124,4 @@ function incRate(cost, rateInc) {
     }, 1000);
   }
 }
+});
