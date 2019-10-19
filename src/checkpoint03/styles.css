@@ -27,10 +27,7 @@
 #catimage {
   height: 300px;
   width: auto;
-  background-image: url(./images/Bleeche.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: none;k
 }
 
 .cat {
