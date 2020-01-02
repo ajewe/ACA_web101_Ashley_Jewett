@@ -1,9 +1,13 @@
+<!-- dashboard recreation showcasing use of CSS grid -->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="./styles.css"
+  <link rel="stylesheet" href="./stylesheets/fontawesome-free-5.12.0-web/css/all.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="./stylesheets/styles.css">
 </head>
 <body>
   <div class="nav">BLOCKS Dashboard</div>
@@ -12,16 +16,21 @@
       <p>USER PROFILE</p>
       <hr></hr>
       <div class="box man">
-      <img class="face" src="face.png"> 
+      <img class="face" src="./media/face.png"> 
       <p class="name">Marcel Newman</p>
       <p class="locus">Madrid, Spain</p>
+      <div class=div-icons>
+        <i class="far fa-user profile-icon"></i>
+        <i class="fas fa-cog profile-icon"></i>
+        <i class="far fa-envelope profile-icon"></i>
+      </div>
       </div>
     </div>
     <div class="main box block-2">
       <p>SITE BANDWIDTH</p>
       <hr></hr>
       <div class="box man">
-      <img class="graph" src="pic2.png">
+      <img class="graph" src="./media/pic2.png">
       <p class="percent">45%</p>
     </div>
     </div>
@@ -29,7 +38,7 @@
       <p>DISK SPACE</p>
       <hr></hr>
       <div class="box man">
-          <img class="graph" src="pic3.png">
+          <img class="graph" src="./media/pic3.png">
           <p class="percent1">65%</p>
         </div>
     </div>
@@ -44,19 +53,24 @@
       <p>SERVER UPTIME</p>
         <hr></hr>
         <div class="uptime">
+          <i class="fas fa-caret-up"></i>
           <p class="up">Up</p>
           <p class="ms">| 356ms.</p>
         </div>
     </div>
     <div class="main box block-5">
-        <p>INBOX (1)</p>
+        <p>LATEST NEWS</p>
         <hr></hr>
+        <div class="box left">
+            <p class="info">Alvarez.is: A beautiful new Dashboard theme has been realised by Carlos Alvarez. Please, visit <a>Alvarez.is</a> for more details.</p>
+            <p class="infotiny">Last Update: 5 minutes ago.</p>
+          </div>
     </div>
     <div class="main box block-6">
       <p>OTHER INFORMATION</p>
         <hr></hr>
         <div class="box man">
-            <img class="graph1" src="pic4.png">
+            <img class="graph1" src="./media/pic4.png">
           </div>
           <div class="box left">
             <p class="other">634.39</p>
@@ -66,25 +80,52 @@
     <div class="main box block-7">
       <p>LAST MONTH REVENUE</p>
         <hr></hr>
+      <div class="rev">
+        <p class="rev1">$879</p>
+        <p class="pipe">|</p>
+        <p class="rev-status" style="color:#B2C832">Approved</p>
+        <br>
+        <br>
+        <p class="rev1">$377</p>
+        <p class="pipe">|</p>
+        <p class="rev-status">Pending</p>
+        <br>
+        <br>
+        <p class="rev1">$156</p>
+        <p class="pipe">|</p>
+        <p class="rev-status" style="color:rgb(250, 54, 54)">Denied</p>
+        <br>
+        <br>
+        <i class="fas fa-caret-up icon-rev"></i>
+        <p class="info-rev">12% Compared Last Month</p>
+    </div>
     </div>
     <div class="main box block-8">
       <p>LAST 30 DAYS STATS</p>
         <hr></hr>
         <div class="main box man">
-            <img class="graph1" src="pic5.png">
+            <img class="graph1" src="./media/pic5.png">
             <p class="info">StatCounter Information</p>
           </div>
     </div>
     <div class="main box block-91">
       <p>STOCK INFORMATION</p>
         <hr></hr>
-        <div class="box right">
-            <img class="graph3" src="pic6.png">
+        <div class="box center">
+            <img class="graph3" src="./media/pic6.png">
           </div>
     </div>
     <div class="main box block-92">
       <p>TO DO LIST</p>
-        <hr></hr>
+      <hr></hr>
+      <div class="rev">
+        <p class="rev1">13</p>
+        <p class="pipe" style="font-size: 16px">|</p>
+        <p class="rev-status" style="font-size: 16px">Pending Tasks</p>
+      </div>
+      <div class="progress">
+          <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 45%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
     </div>
     <div class="main box block-101">
       <p>LIVE VISITORS</p>
@@ -93,7 +134,9 @@
           <p class="vis">388</p>
         </div>
         <div class="vis_under">
+          <i class="fas fa-caret-up icon-rev"></i>
           <p class="mm">412 Max. |</p>
+          <i class="fas fa-caret-down"></i>
           <p class="mm">89 Min.</p>
         </div>
     </div>
@@ -104,6 +147,7 @@
             <p class="vis">145.0K</p>
           </div>
           <div class="vis_under">
+            <i class="fas fa-caret-up icon-rev"></i>
             <p class="mm">23.88%</p>
           </div>
     </div>
@@ -128,76 +172,6 @@
           </div>
     </div>
     <div class="main box block-12">
-      <p>LATEST NEWS</p>
-        <hr></hr>
-        <div class="box left">
-            <p class="info">Alvarez.is: A beautiful new Dashboard theme has been realised by Carlos Alvarez. Please, visit <a>Alvarez.is</a> for more details.</p>
-            <p class="infotiny">Last Update: 5 minutes ago.</p>
-          </div>
-    </div>
-    <div class="main box block-13">
-      <p>TWITTER WIDGET</p>
-        <hr></hr>
-        <p class="infotiny">Show your tweets here!</p>
-    </div>
-    <div class="main box block-14">
-      <p>NOTIFICATIONS</p>
-        <hr></hr>
-        <div class="box man">
-          <button class="noti">Top Right</button>
-          <button class="noti">Top Left</button>
-          <button class="noti">Top Center (fade)</button>
-        </div>
-    </div>
-    <div class="main box block-15">
-      <p>SWITCHES</p>
-        <hr></hr>
-    </div>
-    <div class="main box block-16">
-      <p>GAUGE CHART</p>
-        <hr></hr>
-        <div class="box man">
-            <img class="graph4" src="pic7.png">
-          </div>
-    </div>
-    <div class="main box block-17">
-      <p>ACCORDION</p>
-        <hr></hr>
-        <div class="collapsible-item">
-            <input type="checkbox" id="button">
-            <label for="button" class="collapse">Collapsible Group Item</label>
-            <div class="item-content">
-                    <p class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla iaculis mattis lorem.</p>
-            </div>
-        </div>
-    </div>
-    <div class="main box block-181">
-      <p>LAST REGISTERED USER</p>
-        <hr></hr>
-        <div class="box man">
-            <img class="man2" src="pic8.png">
-            <p class="name2">Paul Smith</p>
-            <p class="locus2">Liverpool, England</p>
-          </div>
-    </div>
-    <div class="main box block-182">
-      <p>MODAL</p>
-        <hr></hr>
-        <div class="box man">
-        <button class="modal">Example Modal Window</button>
-      </div>
-    </div>
-    <div class="main box block-19">
-      <p>FAST CONTACT</p>
-        <hr></hr>
-        <div class="box man">
-        <div class="nom">Name</div>
-        <div class="nom1">Email</div>
-        <div class="message">Message</div>
-        <button class="send">Send</button>
-      </div>
-    </div>
-    <div class="main box block-20">
       <p>BLOCK DASHBOARD</p>
         <hr></hr>
         <div class="box left">
@@ -205,7 +179,35 @@
             <p class="info1">Special Thanks to Highscharts, Linecons and Bootstrap for their amazing tools.</p>
           </div>
     </div>
-    
+    <div class="main box block-13">
+      <p>TWITTER WIDGET</p>
+        <hr></hr>
+        <i class="fas fa-bullhorn"></i>
+        <p class="infotiny">Show your tweets here!</p>
+    </div>
+    <div class="main box block-14">
+      <p>NOTIFICATIONS</p>
+        <hr></hr>
+        <div class="box man">
+          <i class="far fa-comment"></i>
+          <button class="noti">Top Right</button>
+          <button class="noti">Top Left</button>
+          <button class="noti">Top Center (fade)</button>
+        </div>
+    </div>
+
+    <div class="main box block-19">
+      <p>FAST CONTACT</p>
+        <hr></hr>
+        <div class="box man">
+        <div class=form>
+          <input class="form-control" type="text" placeholder="Name">
+          <input class="form-control" type="text" placeholder="Email">
+          <textarea class="form-control" id="validationTextarea" placeholder="Message"></textarea>
+        </div>
+        <button class="send">Send</button>
+      </div>
+    </div>
   </div>
 </body>
 </html>
