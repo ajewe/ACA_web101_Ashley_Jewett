@@ -2,6 +2,10 @@
   margin: 0;
 }
 
+.div-main {
+  overflow: hidden;
+}
+
 .t1 {
   background-color: #55C8AB;
   width: 100%;
@@ -12,13 +16,26 @@
   align-items: center;
 }
 
-.hamburger {
+.dropdown {
   width: 20px;
   height: 20px;
   position: absolute;
   top: 0;
   right: 0;
   margin: 20px;
+}
+
+.dropdown-item{
+  background-color: rgba(248, 242, 227, 0.685);
+}
+
+.dropdown-item:hover{
+  background-color: rgba(28, 210, 227, 0.548);
+}
+
+.dropdown-menu {
+  border: none;
+  background-color: transparent;
 }
 
 .ham {
@@ -73,7 +90,8 @@
 }
 
 h1 {
-  font-size: 52px;
+  font-size: 42px;
+  padding: 0 10px;
   text-align: center;
   font-family: 'Quicksand', sans-serif;
   font-weight: lighter;
@@ -90,11 +108,13 @@ p {
 
 .croissant {
   width: 95%;
+  max-width: 500px;
   height: auto;
 }
 
 .p2 {
   text-align: left;
+  padding: 20px;
 }
 
 .footer {
@@ -137,14 +157,6 @@ p {
 }
 
 @media (min-width: 768px) {
-
-  video {
-    position: fixed;
-    width: 170%;
-    height: auto;
-    top: 0;
-    left: -140;
-  }
 
   .t1 {
     height: auto;
@@ -192,50 +204,61 @@ p {
 
   .main {
     display: grid;
-    grid-template-rows: 1.5fr 1.5fr 1fr;
+    grid-template-rows: 15% 70% 15%;
     grid-template-columns: 1fr 2fr;
     padding-top: 0;
     height: 800px;
   }
 
   h1 {
+    font-size: 48px;
     grid-row: 1/2;
     grid-column: 1/4;
-    padding-top: 40px;
+    padding-top: 20px;
   }
 
   .croissant {
-    margin: 80px 0 0 80px;
+    margin: 20px 0 0 20px;
     grid-row: 2/3;
   }
 
   .p2 {
     grid-column: 2/4;
-    grid-row: 2/3;
-    padding: 80px 80px 0px;
+    grid-row: 2/4;
+    padding: 20px 20px;
+    font-size: 18px;
   }
 
-.footer {
-  height: 15%;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
+  .footer {
+    height: 15%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-.f1 {
-  width: auto;
-  margin: 30px 30px;
-  flex-direction: row;
-}
+  .f1 {
+    width: auto;
+    margin: 30px 30px;
+    flex-direction: row;
+  }
 
-.foot {
-  display: inline-block;
-  margin: 20px;
-}
+  .foot {
+    display: inline-block;
+    margin: 20px;
+  }
 
-.f2 {
-  width: auto;
-  padding-right: 30px;
-}
+  .f2 {
+    width: auto;
+    padding-right: 30px;
+  }
+  }
 
+@media (min-width: 992px) {
+  h1 {
+    font-size: 55px;
+  }
+
+  .p2 {
+    font-size: 20px;
+  }
 }
