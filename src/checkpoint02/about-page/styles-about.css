@@ -2,6 +2,10 @@
   margin: 0;
 }
 
+.div-main {
+  overflow: hidden;
+}
+
 .t1 {
   background-color: #55C8AB;
   width: 100%;

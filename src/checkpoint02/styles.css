@@ -2,7 +2,7 @@
   margin: 0;
 }
 
-.div-top {
+.div-main {
   /* background will be video */
   overflow: hidden;
 }
@@ -26,7 +26,7 @@ video {
   align-items: center;
 }
 
-.hamburger {
+.dropdown {
   width: 20px;
   height: 20px;
   position: absolute;
@@ -321,5 +321,4 @@ p {
   .learn {
     width: 250px;
   }
-
 }
